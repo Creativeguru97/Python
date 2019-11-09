@@ -94,31 +94,37 @@ z == 1101111010;
 # print(x)
 
 
-#List
-# list1 = ["apple", "banana", "cherry"]
-# print(list1[1])
-# list1[1] = "blackberry"
-# print(list1[1])
-#
-# if "apple" in list1:
-#     print("apple is in the list")
-#
-# list1.append("orange")
-# print(list1)
-#
-# list1.remove("blackberry")
-# print(list1)
-#
-# # del list
-# # list.clear()
-#
-# list2 = list1.copy()
-# print(list2)
-#
-# list3 = list(list1)
-# print(list3)
+#List: Ordered and changeable. Allows duplicate members.
+list1 = ["apple", "banana", "cherry"]
+print(list1[1])
+list1[1] = "blackberry"
+print(list1[1])
+print(list1[-1])#Print the last item of the list
+print(list1[0:2])
 
-#Set
+
+if "apple" in list1:
+    print("apple is in the list")
+
+list1.append("orange")#add an item to the end of the list, use the append() method:
+print(list1)
+
+list1.insert("orange")
+print(list1)
+
+list1.remove("blackberry")
+print(list1)
+
+# del list
+# list.clear()
+
+list2 = list1.copy()
+print(list2)
+
+list3 = list(list1)
+print(list3)
+
+#Sets
 # set1 = {"apple", "banana", "cherry"}
 # print(set1)
 
