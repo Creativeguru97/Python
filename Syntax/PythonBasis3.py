@@ -83,8 +83,8 @@
 
 #Syntax: lambda arguments: an expression
 
-# x = lambda a, b: a * b
-# print(x(4, 5))
+x = lambda a, b: a * b
+print(x(4, 5))
 
 def myfunc(n):
     return lambda a: a * n
