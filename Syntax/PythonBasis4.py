@@ -45,5 +45,19 @@ p1 = Person("Issac", "Clerk")
 p1.printname()
 
 
-class Student(Person):
-    pass
+class Child(Person):
+    #When you add the __init__() function, the child class will
+    #no longer inherit the parent's __init__() function.
+    def __init__(this, fname, lname, year):
+    #In this case, To keep the inheritance of the parent's
+    # __init__() function, add a call to the parent's __init__() function:
+        # Person.__init__(this, fname, lname)
+        super().__init__(fname, lname)#Same as above
+        this.bornYear = year
+
+    def description(this):
+        #This is the way to print str and number together?
+        print(this.firstname, this.lastname, "was born in", this.bornYear)
+
+p1c = Child("Nicole", "Brennan", 2019)
+p1c.description()
